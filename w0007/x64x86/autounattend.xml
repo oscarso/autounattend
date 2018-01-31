@@ -174,7 +174,7 @@
 <UserLocale>en-US</UserLocale>
 </component>
 <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<RegisteredOwner>win7x86</RegisteredOwner>
+<RegisteredOwner>win7</RegisteredOwner>
 <OOBE>
 <HideEULAPage>true</HideEULAPage>
 <NetworkLocation>Work</NetworkLocation>
@@ -228,7 +228,7 @@
 </UserAccounts>
 </component>
 <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<RegisteredOwner>win7x64</RegisteredOwner>
+<RegisteredOwner>win7</RegisteredOwner>
 <OOBE>
 <HideEULAPage>true</HideEULAPage>
 <NetworkLocation>Work</NetworkLocation>
