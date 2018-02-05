@@ -29,7 +29,7 @@
             </DiskConfiguration>
             <UserData>
                 <AcceptEula>true</AcceptEula>
-                <FullName>w10</FullName>
+                <FullName>win10v1709x64</FullName>
                 <Organization>Yubico, Inc.</Organization>
             </UserData>
             <ImageInstall>
@@ -78,10 +78,10 @@
                             <Value>dgBhAGcAcgBhAG4AdABQAGEAcwBzAHcAbwByAGQA</Value>
                             <PlainText>false</PlainText>
                         </Password>
-                        <Description>w10</Description>
-                        <DisplayName>w10</DisplayName>
+                        <Description>win10v1709x64</Description>
+                        <DisplayName>win10v1709x64</DisplayName>
                         <Group>Administrators</Group>
-                        <Name>w10</Name>
+                        <Name>win10v1709x64</Name>
                     </LocalAccount>
                 </LocalAccounts>
             </UserAccounts>
@@ -98,7 +98,7 @@
                     <Value>dgBhAGcAcgBhAG4AdABQAGEAcwBzAHcAbwByAGQA</Value>
                     <PlainText>false</PlainText>
                 </Password>
-                <Username>w10</Username>
+                <Username>win10v1709x64</Username>
                 <Enabled>true</Enabled>
             </AutoLogon>
             <FirstLogonCommands>
@@ -272,7 +272,7 @@
                 <HelpCustomized>false</HelpCustomized>
             </OEMInformation>
             <!-- Rename computer here. -->
-            <ComputerName>vagrant-10</ComputerName>
+            <ComputerName>w10v1709x64</ComputerName>
             <TimeZone>Pacific Standard Time</TimeZone>
             <RegisteredOwner />
         </component>
