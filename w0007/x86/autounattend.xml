@@ -2,43 +2,43 @@
 <unattend xmlns="urn:schemas-microsoft-com:unattend">
     <settings pass="windowsPE">
         <component name="Microsoft-Windows-Setup" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<DiskConfiguration>
-<WillShowUI>OnError</WillShowUI>
-<Disk wcm:action="add">
-<DiskID>0</DiskID>
-<WillWipeDisk>true</WillWipeDisk>
-<CreatePartitions>
-<CreatePartition wcm:action="add">
-<Order>1</Order>
-<Type>Primary</Type>
-<Size>100</Size>
-</CreatePartition>
-<CreatePartition wcm:action="add">
-<Order>2</Order>
-<Type>Primary</Type>
-<Extend>true</Extend>
-</CreatePartition>
-</CreatePartitions>
-<ModifyPartitions>
-<ModifyPartition wcm:action="add">
-<Format>NTFS</Format>
-<Label>System Reserved</Label>
-<Order>1</Order>
-<Active>true</Active>
-<PartitionID>1</PartitionID>
-<TypeID>0x27</TypeID>
-</ModifyPartition>
-<ModifyPartition wcm:action="add">
-<Active>true</Active>
-<Format>NTFS</Format>
-<Label>OS</Label>
-<Letter>C</Letter>
-<Order>2</Order>
-<PartitionID>2</PartitionID>
-</ModifyPartition>
-</ModifyPartitions>
-</Disk>
-</DiskConfiguration>
+            <DiskConfiguration>
+                <WillShowUI>OnError</WillShowUI>
+                <Disk wcm:action="add">
+                    <DiskID>0</DiskID>
+                    <WillWipeDisk>true</WillWipeDisk>
+                    <CreatePartitions>
+                        <CreatePartition wcm:action="add">
+                            <Order>1</Order>
+                            <Type>Primary</Type>
+                            <Size>100</Size>
+                        </CreatePartition>
+                        <CreatePartition wcm:action="add">
+                            <Order>2</Order>
+                            <Type>Primary</Type>
+                            <Extend>true</Extend>
+                        </CreatePartition>
+                    </CreatePartitions>
+                    <ModifyPartitions>
+                        <ModifyPartition wcm:action="add">
+                            <Format>NTFS</Format>
+                            <Label>System Reserved</Label>
+                            <Order>1</Order>
+                            <Active>true</Active>
+                            <PartitionID>1</PartitionID>
+                            <TypeID>0x27</TypeID>
+                        </ModifyPartition>
+                        <ModifyPartition wcm:action="add">
+                            <Active>true</Active>
+                            <Format>NTFS</Format>
+                            <Label>OS</Label>
+                            <Letter>C</Letter>
+                            <Order>2</Order>
+                            <PartitionID>2</PartitionID>
+                        </ModifyPartition>
+                    </ModifyPartitions>
+                </Disk>
+            </DiskConfiguration>
             <ImageInstall>
                 <OSImage>
                     <InstallTo>
@@ -52,7 +52,7 @@
             <UserData>
                 <ProductKey>
                     <WillShowUI>OnError</WillShowUI>
-                    </ProductKey>
+                </ProductKey>
                 <AcceptEula>true</AcceptEula>
                 <FullName>w7x86</FullName>
                 <Organization>Yubico</Organization>
@@ -70,7 +70,7 @@
     </settings>
     <settings pass="specialize">
         <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-            <TimeZone>pacific standard time</TimeZone>
+            <TimeZone>Pacific Standard Time</TimeZone>
             <ComputerName>win7x86</ComputerName>
         </component>
     </settings>
@@ -81,26 +81,29 @@
                 <HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
                 <NetworkLocation>Work</NetworkLocation>
                 <ProtectYourPC>1</ProtectYourPC>
+                <SkipMachineOOBE>true</SkipMachineOOBE>
+                <SkipUserOOBE>true</SkipUserOOBE>
             </OOBE>
             <UserAccounts>
                 <AdministratorPassword>
-                    <Value>WQB1AGIAaQBjAG8AUgB1AGwAZQBzACEAQQBkAG0AaQBuAGkAcwB0AHIAYQB0AG8AcgBQAGEAcwBzAHcAbwByAGQA</Value>
+                    <Value>QQBkAG0AaQBuAGkAcwB0AHIAYQB0AG8AcgBQAGEAcwBzAHcAbwByAGQA</Value>
                     <PlainText>false</PlainText>
                 </AdministratorPassword>
                 <LocalAccounts>
                     <LocalAccount wcm:action="add">
                         <Password>
-                            <Value>WQB1AGIAaQBjAG8AUgB1AGwAZQBzACEAUABhAHMAcwB3AG8AcgBkAA==</Value>
+                            <Value>UABhAHMAcwB3AG8AcgBkAA==</Value>
                             <PlainText>false</PlainText>
                         </Password>
-                        <DisplayName>w7x86</DisplayName>
-                        <Name>w7x86</Name>
+                        <DisplayName>win7x86</DisplayName>
+                        <Name>win7x86</Name>
                         <Description>Default Account</Description>
                         <Group>Administrators</Group>
                     </LocalAccount>
                 </LocalAccounts>
             </UserAccounts>
-            <TimeZone>pacific standard time</TimeZone>
+            <TimeZone>Pacific Standard Time</TimeZone>
         </component>
     </settings>
+    <cpi:offlineImage cpi:source="wim:c:/users/w7x64/desktop/win7x86_flat/sources/install.wim#Windows 7 ENTERPRISE" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
 </unattend>
