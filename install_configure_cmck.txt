@@ -1,0 +1,7 @@
+To install the Windows HCK Client \\HCKController\HCKInstall\Client\setup.exe /qn ICFAGREE=Yes
+
+To install the Windows HCK Studio \\HCKController\HCKInstall\Studio\setup.exe /qn
+
+To uninstall the Windows HCK Client \\HCKController\HCKInstall\Client\setup.exe /qn /uninstall
+
+To uninstall the Windows HCK Studio \\HCKController\HCKInstall\Studio\setup.exe /qn /uninstall

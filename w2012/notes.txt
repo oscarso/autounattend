@@ -1,0 +1,1 @@
+No NIC driver for Win 2012 on 5i7RYH, 6i7KYK
